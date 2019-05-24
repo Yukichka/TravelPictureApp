@@ -1,2 +1,0 @@
-# TravelPictureApp
-Created with CodeSandbox
