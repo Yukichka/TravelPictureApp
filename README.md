@@ -13,3 +13,7 @@ Using:
 --------------------
 
 Author: [Yuki](https://github.com/Yukichka) 
+
+Github respository: [Yukichka/TravelPictureApp](https://github.com/Yukichka/TravelPictureApp)
+
+CodeSandbox: [TravelPictureApp](https://codesandbox.io/s/github/Yukichka/TravelPictureApp)
