@@ -13,6 +13,8 @@ import {
 import { NavLink as RRNavLink } from "react-router-dom";
 import { Travel } from "./Travel";
 import { Home } from "./Home";
+import { Image } from "./Image";
+import { Country } from "./Country";
 
 export class App extends React.Component {
   render() {
@@ -43,9 +45,10 @@ export class App extends React.Component {
 
               <Route path="/" exact component={Home} />
               <Route path="/travel" component={Travel} />
+              <Route exact path={`/travel/:countryId`} component={Country} />
               <Route
                 exact
-                path={`travel/:countryId/:cityId`}
+                path="/travel/:countryId/:cityId"
                 component={Image}
               />
             </Col>

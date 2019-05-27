@@ -6,7 +6,7 @@ export function Home() {
       <h3>Home</h3>
       <div className="comment">
         <div>Me, a traveler and cafe lover.</div>
-        <div>Always look for somewhere fun!</div>
+        <div>Always up for somewhere fun!</div>
         <div>
           Exploring the earth
           <span role="img" aria-label="earth">

@@ -12,7 +12,7 @@ export function Travel({ match }) {
           .filter(e => e.cities.length !== 0)
           .map(({ country, id, cities }) => (
             <li key={id}>
-              <Link to={`${match.url}/${id}`}>{country}</Link>
+              <Link to={`/travel/${id}`}>{country}</Link>
             </li>
           ))}
       </ul>
@@ -25,7 +25,6 @@ export function Travel({ match }) {
       </div>
       <br />
       <hr />
-      <Route path={`${match.path}/:countryId`} component={Country} />
     </div>
   );
 }

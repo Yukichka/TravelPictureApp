@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Link } from "react-router-dom";
 import { travel } from "./dataset";
-import { Image } from "./Image";
+
 export function Country({ match }) {
   console.log(match);
   const country = travel.find(({ id }) => id === match.params.countryId);
