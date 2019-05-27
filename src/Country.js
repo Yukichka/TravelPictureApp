@@ -12,17 +12,22 @@ export function Country({ match }) {
       <ul>
         {country.cities.map(city => (
           <li key={city.id}>
-            <Link to={`${match.url}/${city.id}`}>{city.name}</Link>
-
-            <img src={city.location} alt={city.name} className="image" />
+            {city.location !== "" ? (
+              <div>
+                <Link to={`${match.url}/${city.id}`}>
+                  {city.name}
+                  <img src={city.location} alt={city.name} className="image" />
+                </Link>
+              </div>
+            ) : (
+              <div>{city.name}</div>
+            )}
           </li>
         ))}
       </ul>
       <br />
-      <div className="comment">...and more! coming soon</div>
-      <hr />
 
-      <Route path={`${match.path}/:cityId`} component={Image} />
+      <hr />
     </div>
   );
 }

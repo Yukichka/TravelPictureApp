@@ -6,8 +6,11 @@
   padding: 10px 0;
 }
 h3 {
-  padding-left: 15px;
+  padding: 30px 15px;
 }
 .comment {
   padding-left: 20px;
+}
+.bhr {
+  border-top: 5px solid black;
 }

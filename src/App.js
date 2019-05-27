@@ -19,6 +19,7 @@ export class App extends React.Component {
     return (
       <Router>
         <div>
+          <br />
           <Row>
             <Col sm="12" md={{ size: 8, offset: 2 }}>
               <Navbar color="white" light expand="md">
@@ -38,10 +39,15 @@ export class App extends React.Component {
                   </Nav>
                 </Collapse>
               </Navbar>
-              <hr />
+              <hr className="bhr" />
 
               <Route path="/" exact component={Home} />
               <Route path="/travel" component={Travel} />
+              <Route
+                exact
+                path={`travel/:countryId/:cityId`}
+                component={Image}
+              />
             </Col>
           </Row>
         </div>
