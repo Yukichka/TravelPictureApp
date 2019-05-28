@@ -25,7 +25,7 @@ export class App extends React.Component {
           <Row>
             <Col sm="12" md={{ size: 8, offset: 2 }}>
               <Navbar color="white" light expand="md">
-                <NavbarBrand>Travel and Cafe</NavbarBrand>
+                <NavbarBrand>Travel & Cafe</NavbarBrand>
                 <Collapse isOpen={true} navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem>

@@ -1,6 +1,19 @@
 import React from "react";
 import { Route, Link } from "react-router-dom";
 import { travel } from "./dataset";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button,
+  CardDeck,
+  CardImgOverlay,
+  CardColumns,
+  CardGroup
+} from "reactstrap";
 
 export function Country({ match }) {
   console.log(match);
@@ -9,25 +22,31 @@ export function Country({ match }) {
     <div>
       <h3>{country.country}</h3>
 
-      <ul>
-        {country.cities.map(city => (
-          <li key={city.id}>
-            {city.location !== "" ? (
-              <div>
-                <Link to={`${match.url}/${city.id}`}>
-                  {city.name}
-                  <img src={city.location} alt={city.name} className="image" />
-                </Link>
-              </div>
-            ) : (
-              <div>{city.name}</div>
-            )}
-          </li>
-        ))}
-      </ul>
-      <br />
+      {country.cities.map(city => (
+        <div key={city.id}>
+          {city.location !== "" ? (
+            <CardGroup className="container">
+              <Link to={`${match.url}/${city.id}`}>
+                <Card>
+                  <CardBody>
+                    <CardImg src={city.location} alt={city.name} />
 
-      <hr />
+                    <CardText className="cardtext">{city.name}</CardText>
+                  </CardBody>
+                </Card>
+              </Link>
+            </CardGroup>
+          ) : (
+            <CardGroup>
+              <Card body className="text-center">
+                {city.name}
+              </Card>
+            </CardGroup>
+          )}
+        </div>
+      ))}
+
+      <br />
     </div>
   );
 }

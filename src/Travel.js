@@ -24,7 +24,7 @@ export function Travel({ match }) {
         </span>
       </div>
       <br />
-      <hr />
+      <hr color="#FF1493" />
     </div>
   );
 }

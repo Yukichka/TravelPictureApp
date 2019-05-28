@@ -143,9 +143,9 @@ export const travel = [
     cities: [
       {
         name: "Portofino",
-        location: "/images/portofino.jpg",
+        location: "/images/portofino1.jpg",
         id: "portofino",
-        images: ["/images/portofino.jpg"]
+        images: ["/images/portofino1.jpg", "/images/portofino.jpg"]
       },
       {
         name: "Venice",
