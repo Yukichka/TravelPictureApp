@@ -1,6 +1,7 @@
 import Autocomplete from "react-autocomplete";
 import { travel } from "./dataset";
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 const dsList = [];
 travel.forEach(country => {
@@ -16,12 +17,13 @@ travel.forEach(country => {
 });
 // console.log(dsList);
 
-export class AutocompleteCity extends React.Component {
+class AutocompleteCityInternal extends React.Component {
   constructor(props) {
     super(props);
     this.state = { value: "" };
   }
   render() {
+    // console.log(this.props.history)
     return (
       <div>
         <Autocomplete
@@ -42,9 +44,16 @@ export class AutocompleteCity extends React.Component {
           )}
           value={this.state.value}
           onChange={e => this.setState({ value: e.target.value })}
-          onSelect={value => this.setState({ value })}
+          onSelect={(value, item) => {
+            this.setState({ value });
+            // console.log(item.url);
+            this.props.history.push(item.url);
+          }}
         />
       </div>
     );
   }
 }
+
+const AutocompleteCity = withRouter(AutocompleteCityInternal);
+export { AutocompleteCity };
