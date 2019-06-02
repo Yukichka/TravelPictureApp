@@ -8,13 +8,18 @@ import {
   NavItem,
   NavLink,
   Row,
-  Col
+  Col,
+  FormGroup,
+  Label,
+  Input
 } from "reactstrap";
 import { NavLink as RRNavLink } from "react-router-dom";
 import { Travel } from "./Travel";
 import { Home } from "./Home";
 import { Image } from "./Image";
 import { Country } from "./Country";
+
+import { AutocompleteCity } from "./AutocompleteCity";
 
 export class App extends React.Component {
   render() {
@@ -37,6 +42,9 @@ export class App extends React.Component {
                       <NavLink tag={RRNavLink} to="/travel">
                         Travel
                       </NavLink>
+                    </NavItem>
+                    <NavItem className="autocmp">
+                      <AutocompleteCity />
                     </NavItem>
                   </Nav>
                 </Collapse>

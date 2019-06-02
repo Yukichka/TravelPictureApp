@@ -23,9 +23,8 @@ export function Home() {
           </span>
         </div>
         <br />
-
-        <hr />
       </div>
+      <hr color="#FF1493" />
     </div>
   );
 }
