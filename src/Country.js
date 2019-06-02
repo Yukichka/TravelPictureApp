@@ -1,19 +1,7 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { travel } from "./dataset";
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  Button,
-  CardDeck,
-  CardImgOverlay,
-  CardColumns,
-  CardGroup
-} from "reactstrap";
+import { Card, CardImg, CardText, CardBody, CardGroup } from "reactstrap";
 
 export function Country({ match }) {
   console.log(match);

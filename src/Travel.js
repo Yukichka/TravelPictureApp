@@ -1,6 +1,6 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
-import { Country } from "./Country";
+import { Link } from "react-router-dom";
+
 import { travel } from "./dataset";
 
 export function Travel({ match }) {

@@ -8,10 +8,7 @@ import {
   NavItem,
   NavLink,
   Row,
-  Col,
-  FormGroup,
-  Label,
-  Input
+  Col
 } from "reactstrap";
 import { NavLink as RRNavLink } from "react-router-dom";
 import { Travel } from "./Travel";
