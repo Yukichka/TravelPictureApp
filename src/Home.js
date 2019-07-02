@@ -1,5 +1,8 @@
 import React from "react";
 import { travel } from "./dataset";
+import {Map} from "./Map";
+
+
 export function Home() {
   return (
     <div>
@@ -25,6 +28,7 @@ export function Home() {
         <br />
       </div>
       <hr color="#FF1493" />
+     
     </div>
   );
 }
