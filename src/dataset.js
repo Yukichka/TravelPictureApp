@@ -140,8 +140,6 @@ export const travel = [
       { name: "Pisa", location: "", id: "italy-pisa", images: [] }
     ]
   },
-  { country: "France", id: "france", cities: [] },
-  { country: "Italy", id: "italy", cities: [] },
   { country: "Spain", id: "spain", cities: [] },
   { country: "Netherland", id: "netherland", cities: [] },
   { country: "Germany", id: "germany", cities: [] },
@@ -170,5 +168,7 @@ export const travel = [
   { country: "Vietnam", id: "vietnam", cities: [] },
   { country: "UK", id: "uk", cities: [] },
   { country: "US", id: "us", cities: [] },
-  { country: "Canada", id: "canada", cities: [] }
+  { country: "Canada", id: "canada", cities: [] },
+  { country: "China", id: "china", cities:[] },
+  { country: "Hong Kong", id: "hongkong", cities:[] }
 ];
