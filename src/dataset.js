@@ -30,9 +30,20 @@ export const travel = [
           "/images/nice3.jpg"
         ]
       },
-      { name: "Lyon", location: "", id: "france-lyon", images: [] },
-      { name: "Toulon", location: "", id: "france-toulon", images: [] },
-      { name: "Hyeres", location: "", id: "france-hyeres", images: [] },
+      {
+        name: "Lyon",
+        location: "/images/lyon.jpg",
+        id: "france-lyon",
+        images: [
+          "/images/lyon.jpg",
+          "/images/lyon1.jpg",
+          "/images/lyon2.jpg",
+          "/images/lyon3.jpg",
+          "/images/lyon4.jpg"
+        ]
+      },
+      { name: "Toulon", location: "/images/toulon.jpg", id: "france-toulon", images: ["/images/toulon.jpg"] },
+      { name: "Hyeres", location: "/images/hyeres.jpg", id: "france-hyeres", images: ["/images/hyeres.jpg"] },
       {
         name: "Porquerolles",
         location: "",
@@ -41,13 +52,13 @@ export const travel = [
       },
       {
         name: "Saint-Tropez",
-        location: "",
+        location: "/images/sainttropez.jpg",
         id: "france-sainttropez",
-        images: []
+        images: ["/images/sainttropez.jpg","/images/sainttropez1.jpg"]
       },
-      { name: "Cannes", location: "", id: "france-cannes", images: [] },
-      { name: "Eze", location: "", id: "france-eze", images: [] },
-      { name: "Menton", location: "", id: "france-menton", images: [] },
+      { name: "Cannes", location: "/images/cannes.jpg", id: "france-cannes", images: ["/images/cannes.jpg","/images/cannes1.jpg"] },
+      { name: "Eze", location: "/images/eze.jpg", id: "france-eze", images: ["/images/eze.jpg"] },
+      { name: "Menton", location: "/images/menton1.jpg", id: "france-menton", images: ["/images/menton1.jpg","/images/menton.jpg","/images/menton2.jpg"] },
       {
         name: "Aix-en-Provence",
         location: "",
@@ -169,6 +180,6 @@ export const travel = [
   { country: "UK", id: "uk", cities: [] },
   { country: "US", id: "us", cities: [] },
   { country: "Canada", id: "canada", cities: [] },
-  { country: "China", id: "china", cities:[] },
-  { country: "Hong Kong", id: "hongkong", cities:[] }
+  { country: "China", id: "china", cities: [] },
+  { country: "Hong Kong", id: "hongkong", cities: [] }
 ];
