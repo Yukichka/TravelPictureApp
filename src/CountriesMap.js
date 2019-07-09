@@ -47,7 +47,7 @@ export class CountriesMap extends React.Component {
       if (coordinates === '0,0') {
           return <div className="comment">No map information is available</div>
       }
-      return <img src={`https://maps.googleapis.com/maps/api/staticmap?center=Poland&markers=color:red|label:*|${this.state.markers}&zoom=2&size=610x500&key=${APIKEY}`} style={{'z-index': '-1'}}></img>
+      return <img src={`https://maps.googleapis.com/maps/api/staticmap?center=Poland&markers=color:red|label:*|${this.state.markers}&zoom=2&size=610x500&key=${APIKEY}`}></img>
     return <div />;
   }
 }

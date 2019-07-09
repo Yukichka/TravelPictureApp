@@ -27,4 +27,5 @@ h3 {
 }
 .autocmp {
   padding: 5px 10px;
+  z-index: 1;
 }
