@@ -6,6 +6,7 @@
   "main": "src/index.js",
   "dependencies": {
     "bootstrap": "4.3.1",
+    "gh-pages": "^2.0.1",
     "react": "16.8.6",
     "react-autocomplete": "1.8.1",
     "react-dom": "16.8.6",
@@ -21,12 +22,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -r https://github.com/Yukichka/yukichka.github.io.git -b master"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "homepage": "https://yukichka.github.io/"
 }
