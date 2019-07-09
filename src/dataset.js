@@ -52,9 +52,9 @@ export const travel = [
       },
       {
         name: "Saint-Tropez",
-        location: "/images/sainttropez.jpg",
+        location: "/images/sainttropez1.jpg",
         id: "france-sainttropez",
-        images: ["/images/sainttropez.jpg","/images/sainttropez1.jpg"]
+        images: ["/images/sainttropez1.jpg","/images/sainttropez.jpg"]
       },
       { name: "Cannes", location: "/images/cannes.jpg", id: "france-cannes", images: ["/images/cannes.jpg","/images/cannes1.jpg"] },
       { name: "Eze", location: "/images/eze.jpg", id: "france-eze", images: ["/images/eze.jpg"] },
