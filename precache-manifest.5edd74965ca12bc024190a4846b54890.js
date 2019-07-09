@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/TravelPictureApp/static/js/runtime~main.22041369.js"
   },
   {
-    "revision": "2a61298b7b3b3e34ff95",
-    "url": "/TravelPictureApp/static/js/main.b6a3b6ff.chunk.js"
+    "revision": "de9961a1860373d55634",
+    "url": "/TravelPictureApp/static/js/main.77a48196.chunk.js"
   },
   {
     "revision": "7c820d2438c6ea6e1bd0",
     "url": "/TravelPictureApp/static/js/2.72153c73.chunk.js"
   },
   {
-    "revision": "2a61298b7b3b3e34ff95",
+    "revision": "de9961a1860373d55634",
     "url": "/TravelPictureApp/static/css/main.44003eaa.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/TravelPictureApp/static/css/2.b6a70ca4.chunk.css"
   },
   {
-    "revision": "b63a48ab097d8e9340e851c6acdad1b2",
+    "revision": "b104a6c606e913d88fd6475fe90af9b8",
     "url": "/TravelPictureApp/index.html"
   }
 ];
