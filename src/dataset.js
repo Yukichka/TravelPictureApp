@@ -51,7 +51,7 @@ export const travel = [
         images: []
       },
       {
-        name: "Saint-Tropez",
+        name: "Saint-Tropez", 
         location: "/images/sainttropez1.jpg",
         id: "france-sainttropez",
         images: ["/images/sainttropez1.jpg","/images/sainttropez.jpg"]
