@@ -2,6 +2,7 @@ import React from "react";
 import { travel } from "./dataset";
 import { CountriesMap } from "./CountriesMap";
 import { Col, Row } from "reactstrap";
+import { Footer } from "./Footer";
 
 export function Home() {
   return (
@@ -36,6 +37,7 @@ export function Home() {
         </Col>
       </Row>
       <hr color="#FF1493" />
+      <Footer/>
     </div>
   );
 }

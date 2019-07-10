@@ -2,6 +2,7 @@ import React from "react";
 import { travel } from "./dataset";
 import { CityMap } from "./CityMap";
 import { ClassificationType } from "typescript";
+import { Footer } from "./Footer";
 
 export function Image({ match }) {
   const city = travel
@@ -10,8 +11,8 @@ export function Image({ match }) {
   return (
     <div>
       <h3>{city.name}</h3>
-      <CityMap cityId={city.id}/>
-      <br/>
+      <CityMap cityId={city.id} />
+      <br />
       {city.images.length !== 0 ? (
         city.images.map((img, idx) => (
           <img src={img} alt="" className="image" key={idx} />
@@ -19,6 +20,9 @@ export function Image({ match }) {
       ) : (
         <div className="comment">No pictures yet!</div>
       )}
+      <br />
+      <hr color="#FF1493" />
+      <Footer />
     </div>
   );
 }
