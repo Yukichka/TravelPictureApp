@@ -10,7 +10,7 @@ import {
   Row,
   Col
 } from "reactstrap";
-import { NavLink as RRNavLink } from "react-router-dom";
+import { NavLink as RRNavLink } from "react-router-dom";  
 import { Travel } from "./Travel";
 import { Home } from "./Home";
 import { Image } from "./Image";

@@ -8,19 +8,34 @@ export class Timeline extends React.Component {
     var dates = [];
     travel.forEach(country => {
       country.cities.forEach(city => {
-        console.log("city", city);
         city.dates.forEach(date => {
           if (date.length) {
-            dates.push({ city: city, date: date });
+            dates.push({ city: city, date: date, timestamp: this.stringDateToTimestamp(date) });
           }
         });
       });
     });
-    console.log("dates", dates);
+    // console.log("dates", dates);
+    return dates;
+  }
+
+  stringDateToTimestamp(stringDate) {
+    var arr = stringDate.split(".")
+    return new Date (arr[2], arr[1] - 1, arr[0]).getTime()
   }
 
   render() {
-    this.prepareDates();
-    return <div>Hello timeline page here</div>;
+    const citiesByDate = this.prepareDates();
+    citiesByDate.sort(function(a, b){return b.timestamp - a.timestamp});;
+    
+    return (
+      <div>
+        {citiesByDate.map((el, idx) =>
+          <li key={idx}>
+            {el.city.name} {el.date} 
+          </li>
+        )}
+      </div>
+    );
   }
 }
