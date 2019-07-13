@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { travel } from "./dataset";
 import { Card, CardImg, CardText, CardBody, CardGroup } from "reactstrap";
 import { Footer } from "./Footer";
-import { TravelTimeline } from "./TravelTimeline";
 
 export function Country({ match }) {
   console.log(match);
@@ -11,8 +10,6 @@ export function Country({ match }) {
   return (
     <div>
       <h3>{country.country}</h3>
-      <TravelTimeline />
-
       {country.cities.map(city => (
         <div key={city.id}>
           {city.location !== "" ? (

@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import { travel } from "./dataset";
 import { Country } from "./Country";
 
-export class TravelTimeline extends React.Component {
+export class Timeline extends React.Component {
   prepareDates() {
     var dates = [];
     travel.forEach(country => {
@@ -21,6 +21,6 @@ export class TravelTimeline extends React.Component {
 
   render() {
     this.prepareDates();
-    return <div />;
+    return <div>Hello timeline page here</div>;
   }
 }
