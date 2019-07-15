@@ -50,8 +50,8 @@ export class Timeline extends React.Component {
                       <div className="date-content">
                         <div className="date-outer">
                           <span className="date">
-                            <span className="month">{el.date}</span>
-                            <span className="year">{el.city.name}</span>
+                            <span className="ddmmyyyy">{el.date}</span>
+                            <span className="city">{el.city.name}</span>
                           </span>
                         </div>
                       </div>

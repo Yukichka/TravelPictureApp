@@ -1,136 +1,133 @@
-.main-timeline{
-    margin: 20px 0;
-    position: relative;
-  }
-  .main-timeline:before{
-    content: "";
-    display: block;
-    width: 2px;
-    height: 100%;
-    background: #111;
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  .main-timeline .timeline{
-    margin-bottom: 40px;
-    position: relative;
-  }
-  .main-timeline .timeline:after{
-    content: "";
-    display: block;
-    clear: both;
-  }
-  .main-timeline .icon{
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
-  .main-timeline .icon:before,
-  .main-timeline .icon:after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.33s ease-out 0s;
-  }
-  .main-timeline .icon:before{
-    background: #fff;
-    border: 2px solid #FF1493;
-    left: -3px;
-  }
-  .main-timeline .icon:after{
-    border: 2px solid #111;
-    left: 3px;
-  }
-  .main-timeline .timeline:hover .icon:before{
-    left: 3px;
-  }
-  .main-timeline .timeline:hover .icon:after{
-    left: -3px;
-  }
-  .main-timeline .date-content{
-    width: 50%;
-    float: left;
-    position: relative;
-  }
-  .main-timeline .date-content:before{
-    content: "";
-    width: 32.5%;
-    height: 2px;
-    background: #111;
-    margin: auto 0;
-    position: absolute;
-    top: 0;
-    right: 10px;
-    bottom: 0;
-  }
-  .main-timeline .date-outer{
-    width: 175px;
-    height: 175px;
-    font-size: 16px;
-    color: #000;
-    text-align: center;
-    margin: auto;
-    z-index: 1;
-  }
-  .main-timeline .date-outer:before,
-  .main-timeline .date-outer:after{
-    content: "";
-    width: 175px;
-    height: 175px;
-    margin: 0 auto;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: all 0.33s ease-out 0s;
-  }
-  
-  
-  
-  .main-timeline .timeline:hover .date-outer:before{
-    left: 6px;
-  }
-  .main-timeline .timeline:hover .date-outer:after{
-    left: -6px;
-  }
-  .main-timeline .date{
-    width: 100%;
-    margin: auto;
-    position: absolute;
-    top: 33%;
-    left: 0;
-  }
-  .main-timeline .month{
-    font-size: 18px;
-    font-weight: 700;
-    color: #111;
-  }
-  .main-timeline .year{
-    display: block;
-    font-size: 36px;
-    font-weight: 700;
-    color: #111;
-    line-height: 36px;
-  }
-  
-  .main-timeline .timeline:nth-child(2n) .date-content{
-    float: right;
-  }
-  .main-timeline .timeline:nth-child(2n) .date-content:before{
-    left: 10px;
-  }
-  
+.main-timeline {
+  margin: 20px 0;
+  position: relative;
+}
+.main-timeline:before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: #111;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.main-timeline .timeline {
+  margin-bottom: 40px;
+  position: relative;
+}
+.main-timeline .timeline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-timeline .icon {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.main-timeline .icon:before,
+.main-timeline .icon:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.33s ease-out 0s;
+}
+.main-timeline .icon:before {
+  background: #fff;
+  border: 2px solid #ff1493;
+  left: -3px;
+}
+.main-timeline .icon:after {
+  border: 2px solid #111;
+  left: 3px;
+}
+.main-timeline .timeline:hover .icon:before {
+  left: 3px;
+}
+.main-timeline .timeline:hover .icon:after {
+  left: -3px;
+}
+.main-timeline .date-content {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.main-timeline .date-content:before {
+  content: "";
+  width: 32.5%;
+  height: 2px;
+  background: #111;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+}
+.main-timeline .date-outer {
+  width: 175px;
+  height: 175px;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  margin: auto;
+  z-index: 1;
+}
+.main-timeline .date-outer:before,
+.main-timeline .date-outer:after {
+  content: "";
+  width: 175px;
+  height: 175px;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.33s ease-out 0s;
+}
+
+.main-timeline .timeline:hover .date-outer:before {
+  left: 6px;
+}
+.main-timeline .timeline:hover .date-outer:after {
+  left: -6px;
+}
+.main-timeline .date {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 33%;
+  left: 0;
+}
+.main-timeline .ddmmyyyy {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+.main-timeline .city {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+  line-height: 36px;
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content {
+  float: right;
+}
+.main-timeline .timeline:nth-child(2n) .date-content:before {
+  left: 10px;
+}
