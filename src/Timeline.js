@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import { travel } from "./dataset";
 import { Country } from "./Country";
+import { Footer } from "./Footer";
 
 import "./timelineStyle.css";
 
@@ -61,6 +62,9 @@ export class Timeline extends React.Component {
             </div>
           </div>
         </div>
+        <br />
+        <hr color="#FF1493" />
+        <Footer />
       </div>
     );
   }
