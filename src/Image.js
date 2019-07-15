@@ -1,7 +1,6 @@
 import React from "react";
 import { travel } from "./dataset";
 import { CityMap } from "./CityMap";
-import { ClassificationType } from "typescript";
 import { Footer } from "./Footer";
 
 export function Image({ match }) {

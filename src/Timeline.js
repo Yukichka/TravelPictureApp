@@ -1,8 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
 import { travel } from "./dataset";
-import { Country } from "./Country";
+
 import { Footer } from "./Footer";
+import { Link } from "react-router-dom";
 
 import "./timelineStyle.css";
 
@@ -16,13 +17,14 @@ export class Timeline extends React.Component {
             dates.push({
               city: city,
               date: date,
-              timestamp: this.stringDateToTimestamp(date)
+              timestamp: this.stringDateToTimestamp(date),
+              country: country
             });
           }
         });
       });
     });
-    // console.log("dates", dates);
+    console.log("dates", dates);
     return dates;
   }
 
@@ -45,17 +47,19 @@ export class Timeline extends React.Component {
               <div className="main-timeline">
                 {citiesByDate.map((el, idx) => {
                   return (
-                    <div className="timeline" key={idx}>
-                      <div className="icon" />
-                      <div className="date-content">
-                        <div className="date-outer">
-                          <span className="date">
-                            <span className="ddmmyyyy">{el.date}</span>
-                            <span className="city">{el.city.name}</span>
-                          </span>
+                    <Link to={`/travel/${el.country.id}/${el.city.id}`}>
+                      <div className="timeline" key={idx}>
+                        <div className="icon" />
+                        <div className="date-content">
+                          <div className="date-outer">
+                            <span className="date">
+                              <span className="ddmmyyyy">{el.date}</span>
+                              <span className="city">{el.city.name}</span>
+                            </span>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   );
                 })}
               </div>
