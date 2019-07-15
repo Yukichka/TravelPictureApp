@@ -47,8 +47,8 @@ export class Timeline extends React.Component {
               <div className="main-timeline">
                 {citiesByDate.map((el, idx) => {
                   return (
-                    <Link to={`/travel/${el.country.id}/${el.city.id}`}>
-                      <div className="timeline" key={idx}>
+                    <div className="timeline" key={idx}>
+                      <Link to={`/travel/${el.country.id}/${el.city.id}`}>
                         <div className="icon" />
                         <div className="date-content">
                           <div className="date-outer">
@@ -58,8 +58,8 @@ export class Timeline extends React.Component {
                             </span>
                           </div>
                         </div>
-                      </div>
-                    </Link>
+                      </Link>
+                    </div>
                   );
                 })}
               </div>
