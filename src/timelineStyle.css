@@ -143,3 +143,18 @@
 .main-timeline .timeline:nth-child(2n) .date-content:before {
   left: 10px;
 }
+
+@media (max-width: 500px) {
+    .main-timeline .date-content:before {
+        content: "";
+        width: 10px;
+        height: 2px;
+        background: #111;
+        margin: auto 0;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        bottom: 0;
+      }
+  }
+  

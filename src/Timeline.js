@@ -39,7 +39,8 @@ export class Timeline extends React.Component {
     });
 
     return (
-      <div className="container">
+      <div>
+        <h3>Timeline</h3>
         <div className="container">
           <div className="row">
             <div className="col-md-12">

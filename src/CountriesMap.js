@@ -24,25 +24,24 @@ export class CountriesMap extends React.Component {
           const city = jsonData.find(e => e.country === countryObject.country);
           if (city !== undefined) visitedCities.push(city);
         });
-        console.log("visitedCities", visitedCities);
+        // console.log("visitedCities", visitedCities);
 
         const coordinates = visitedCities.map(
           city => `${city.lat},${city.lng}`
         );
-        console.log("coordinates", coordinates);
+        // console.log("coordinates", coordinates);
 
         const markersUrl = coordinates.join("%7C");
         this.setState({ markers: markersUrl });
 
-        console.log("----got: ", travel[0].country);
         const filterData = jsonData.find(
           el => el.country === travel[0].country
         );
-        console.log("---got: ", filterData[0]);
+
         const locationData = filterData
           ? [filterData.lat, filterData.lng]
           : [0, 0];
-        console.log("-----got: ", locationData);
+        // console.log("-----got: ", locationData);
         this.setState({ locationData: locationData });
       });
   }
@@ -61,6 +60,7 @@ export class CountriesMap extends React.Component {
           this.state.markers
         }&zoom=2&size=610x500&key=${APIKEY}`}
         alt=""
+        className="responsive"
       />
     );
   }

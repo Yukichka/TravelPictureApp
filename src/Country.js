@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { travel } from "./dataset";
 import { Card, CardImg, CardText, CardBody, CardGroup } from "reactstrap";
 
-
 export function Country({ match }) {
   console.log(match);
   const country = travel.find(({ id }) => id === match.params.countryId);
@@ -25,7 +24,7 @@ export function Country({ match }) {
               </Link>
             </CardGroup>
           ) : (
-            <CardGroup>
+            <CardGroup style={{margin:"10px"}}>
               <Card body className="text-center">
                 {city.name}
               </Card>
@@ -33,7 +32,6 @@ export function Country({ match }) {
           )}
         </div>
       ))}
-      <br />
     </div>
   );
 }

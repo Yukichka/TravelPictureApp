@@ -14,15 +14,15 @@ export function About() {
           Contact me at 
           <SocialIcon
             url="https://www.linkedin.com/in/yuki-inasawa-23175516a/"
-            style={{ margin: "8px" }}
+            style={{ margin: "7px" }}
           />
           <SocialIcon
             url="https://github.com/Yukichka"
-            style={{ margin: "8px" }}
+            style={{ margin: "7px" }}
           />
           <SocialIcon
             url="https://www.instagram.com/ukinnn/"
-            style={{ margin: "8px" }}
+            style={{ margin: "7px" }}
           />
         </p>
       </div>

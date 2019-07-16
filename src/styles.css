@@ -24,6 +24,7 @@ h3 {
 }
 .container {
   position: relative;
+  margin: 10px
 }
 .autocmp {
   padding: 5px 10px;
@@ -33,4 +34,13 @@ h3 {
 .centered {
   text-align: center;
   margin-bottom: 15px;
+}
+
+@media (min-width: 300px) {
+  .responsive {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+  }
 }
