@@ -2,7 +2,6 @@ import React from "react";
 import { render } from "react-dom";
 import { travel } from "./dataset";
 
-import { Footer } from "./Footer";
 import { Link } from "react-router-dom";
 
 import "./timelineStyle.css";
@@ -24,7 +23,7 @@ export class Timeline extends React.Component {
         });
       });
     });
-    console.log("dates", dates);
+    // console.log("dates", dates);
     return dates;
   }
 
@@ -67,8 +66,6 @@ export class Timeline extends React.Component {
           </div>
         </div>
         <br />
-        <hr color="#FF1493" />
-        <Footer />
       </div>
     );
   }

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { travel } from "./dataset";
 import { Card, CardImg, CardText, CardBody, CardGroup } from "reactstrap";
-import { Footer } from "./Footer";
+
 
 export function Country({ match }) {
   console.log(match);
@@ -34,8 +34,6 @@ export function Country({ match }) {
         </div>
       ))}
       <br />
-      <hr color="#FF1493" />
-      <Footer />
     </div>
   );
 }

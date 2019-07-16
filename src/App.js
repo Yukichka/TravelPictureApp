@@ -10,12 +10,13 @@ import {
   Row,
   Col
 } from "reactstrap";
-import { NavLink as RRNavLink } from "react-router-dom";  
+import { NavLink as RRNavLink } from "react-router-dom";
 import { Travel } from "./Travel";
 import { Home } from "./Home";
 import { Image } from "./Image";
 import { Country } from "./Country";
 import { Timeline } from "./Timeline";
+import { Footer } from "./Footer";
 
 import { AutocompleteCity } from "./AutocompleteCity";
 
@@ -63,6 +64,8 @@ export class App extends React.Component {
                 path="/travel/:countryId/:cityId"
                 component={Image}
               />
+              <hr color="#FF1493" />
+              <Footer />
             </Col>
           </Row>
         </div>

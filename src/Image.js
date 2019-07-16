@@ -1,7 +1,7 @@
 import React from "react";
 import { travel } from "./dataset";
 import { CityMap } from "./CityMap";
-import { Footer } from "./Footer";
+
 
 export function Image({ match }) {
   const city = travel
@@ -20,8 +20,6 @@ export function Image({ match }) {
         <div className="comment">No pictures yet!</div>
       )}
       <br />
-      <hr color="#FF1493" />
-      <Footer />
     </div>
   );
 }

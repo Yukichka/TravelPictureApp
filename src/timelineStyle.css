@@ -67,7 +67,7 @@
 }
 .main-timeline .date-content:before {
   content: "";
-  width: 32.5%;
+  width: 25%;
   height: 2px;
   background: #111;
   margin: auto 0;
@@ -100,6 +100,7 @@
 }
 
 .main-timeline .timeline:hover .date-outer:before {
+    
   left: 6px;
 }
 .main-timeline .timeline:hover .date-outer:after {
@@ -112,17 +113,28 @@
   top: 33%;
   left: 0;
 }
+
 .main-timeline .ddmmyyyy {
   font-size: 18px;
   font-weight: 700;
   color: #111;
 }
 .main-timeline .city {
+  margin-top: 15px;
   display: block;
-  font-size: 36px;
+  font-size: 25px;
   font-weight: 700;
   color: #111;
   line-height: 36px;
+}
+.main-timeline .timeline:active .date{
+    margin-top: 1pt;
+    margin-left: 1pt;
+}
+
+.main-timeline .timeline:hover .date{
+    text-shadow: 1px 1px gray;
+    
 }
 
 .main-timeline .timeline:nth-child(2n) .date-content {

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Footer } from "./Footer";
 
 import { travel } from "./dataset";
 
@@ -25,8 +24,6 @@ export function Travel({ match }) {
         </span>
       </div>
       <br />
-      <hr color="#FF1493" />
-      <Footer />
     </div>
   );
 }

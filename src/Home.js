@@ -36,8 +36,6 @@ export function Home() {
           <CountriesMap />
         </Col>
       </Row>
-      <hr color="#FF1493" />
-      <Footer/>
     </div>
   );
 }
