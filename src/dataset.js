@@ -401,8 +401,8 @@ export const travel = [
   { country: "Taiwan", id: "taiwan", cities: [], dates: [] },
   { country: "Cambodia", id: "cambodia", cities: [], dates: [] },
   { country: "Vietnam", id: "vietnam", cities: [], dates: [] },
-  { country: "UK", id: "uk", cities: [], dates: [] },
-  { country: "US", id: "us", cities: [], dates: [] },
+  { country: "United Kingdom", id: "unitedkingdom", cities: [], dates: [] },
+  { country: "United States", id: "unitedstates", cities: [], dates: [] },
   { country: "Canada", id: "canada", cities: [], dates: [] },
   { country: "China", id: "china", cities: [], dates: [] },
   { country: "Hong Kong", id: "hongkong", cities: [], dates: [] }

@@ -17,6 +17,7 @@ import { Image } from "./Image";
 import { Country } from "./Country";
 import { Timeline } from "./Timeline";
 import { Footer } from "./Footer";
+import {About} from "./About";
 
 import { AutocompleteCity } from "./AutocompleteCity";
 
@@ -47,6 +48,11 @@ export class App extends React.Component {
                         Timeline
                       </NavLink>
                     </NavItem>
+                    <NavItem>
+                      <NavLink tag={RRNavLink} to="/about">
+                        About
+                      </NavLink>
+                    </NavItem>
                     <NavItem className="autocmp">
                       <AutocompleteCity />
                     </NavItem>
@@ -58,6 +64,8 @@ export class App extends React.Component {
               <Route path="/" exact component={Home} />
               <Route path="/travel" component={Travel} />
               <Route path="/timeline" component={Timeline} />
+              <Route path="/about" component={About} />
+
               <Route exact path={`/travel/:countryId`} component={Country} />
               <Route
                 exact
