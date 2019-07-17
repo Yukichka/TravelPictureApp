@@ -27,7 +27,7 @@ export class App extends React.Component {
       <Router>
         <div>
           <br />
-          <Row>
+          
             <Col sm="12" md={{ size: 8, offset: 2 }}>
               <Navbar color="white" light expand="md">
                 <NavbarBrand>Travel & Cafe</NavbarBrand>
@@ -75,7 +75,7 @@ export class App extends React.Component {
               <hr color="#EBB" />
               <Footer />
             </Col>
-          </Row>
+         
         </div>
       </Router>
     );

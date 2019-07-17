@@ -18,11 +18,7 @@ export function Home() {
                     <div>Me, a traveler and cafe lover.</div>
                     <div>Always up for somewhere fun!</div>
                     <div>
-                      Exploring the earth
-                      <span role="img" aria-label="earth">
-                        {" "}
-                        &#127759;
-                      </span>
+                      Exploring the earth.
                     </div>
                     <br />
                     <div>
@@ -50,10 +46,7 @@ export function Home() {
                   <div>Always up for somewhere fun!</div>
                   <div>
                     Exploring the earth
-                    <span role="img" aria-label="earth">
-                      {" "}
-                      &#127759;
-                    </span>
+                    
                   </div>
                   <br />
                   <div>

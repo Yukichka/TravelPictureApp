@@ -136,6 +136,10 @@
     text-shadow: 5px 5px #EBB;
     
 }
+.main-timeline .timeline:hover:active .date{
+    text-shadow: 5px 5px #EBB;
+    
+}
 
 .main-timeline .timeline:nth-child(2n) .date-content {
   float: right;
