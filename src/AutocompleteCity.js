@@ -47,6 +47,7 @@ class AutocompleteCityInternal extends React.Component {
           onSelect={(value, item) => {
             this.setState({ value });
             // console.log(item.url);
+            this.props.onCitySelected();
             this.props.history.push(item.url);
           }}
         />

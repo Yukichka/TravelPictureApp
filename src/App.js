@@ -22,7 +22,7 @@ import { About } from "./About";
 import { AutocompleteCity } from "./AutocompleteCity";
 
 export class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.toggleNavbar = this.toggleNavbar.bind(this);
     this.state = {
@@ -35,63 +35,68 @@ export class App extends React.Component {
       collapsed: !this.state.collapsed
     });
   }
-    
-  
+
   render() {
     return (
       <Router>
         <div>
           <br />
-          
-            <Col sm="12" md={{ size: 8, offset: 2 }}>
-              <Navbar color="white" light expand="md">
-                <NavbarBrand>Travel & Cafe</NavbarBrand>
-                <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-                <Collapse isOpen={!this.state.collapsed} navbar>
-                  <Nav className="ml-auto" navbar>
-                    <NavItem>
-                      <NavLink tag={RRNavLink} to="/">
-                        Home
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink tag={RRNavLink} to="/travel">
-                        Travel
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink tag={RRNavLink} to="/timeline">
-                        Timeline
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink tag={RRNavLink} to="/about">
-                        About
-                      </NavLink>
-                    </NavItem>
-                    <NavItem className="autocmp">
-                      <AutocompleteCity />
-                    </NavItem>
-                  </Nav>
-                </Collapse>
-              </Navbar>
-              <hr className="bhr" />
+          <Col sm="12" md={{ size: 8, offset: 2 }}>
+            <Navbar color="white" light expand="md">
+              <NavbarBrand>Travel & Cafe</NavbarBrand>
+              <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+              <Collapse isOpen={!this.state.collapsed} navbar>
+                <Nav className="ml-auto" navbar>
+                  <NavItem>
+                    <NavLink tag={RRNavLink} to="/" onClick={this.toggleNavbar}>
+                      Home
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      tag={RRNavLink}
+                      to="/travel"
+                      onClick={this.toggleNavbar}
+                    >
+                      Travel
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      tag={RRNavLink}
+                      to="/timeline"
+                      onClick={this.toggleNavbar}
+                    >
+                      Timeline
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      tag={RRNavLink}
+                      to="/about"
+                      onClick={this.toggleNavbar}
+                    >
+                      About
+                    </NavLink>
+                  </NavItem>
+                  <NavItem className="autocmp">
+                    <AutocompleteCity onCitySelected={this.toggleNavbar} />
+                  </NavItem>
+                </Nav>
+              </Collapse>
+            </Navbar>
+            <hr className="bhr" />
 
-              <Route path="/" exact component={Home} />
-              <Route path="/travel" component={Travel} />
-              <Route path="/timeline" component={Timeline} />
-              <Route path="/about" component={About} />
+            <Route path="/" exact component={Home} />
+            <Route path="/travel" component={Travel} />
+            <Route path="/timeline" component={Timeline} />
+            <Route path="/about" component={About} />
 
-              <Route exact path={`/travel/:countryId`} component={Country} />
-              <Route
-                exact
-                path="/travel/:countryId/:cityId"
-                component={Image}
-              />
-              <hr color="#EBB" />
-              <Footer />
-            </Col>
-         
+            <Route exact path={`/travel/:countryId`} component={Country} />
+            <Route exact path="/travel/:countryId/:cityId" component={Image} />
+            <hr color="#EBB" />
+            <Footer />
+          </Col>
         </div>
       </Router>
     );
