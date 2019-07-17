@@ -1,7 +1,7 @@
 .main-timeline {
   margin: 20px 0;
   position: relative;
-}p
+}
 .main-timeline:before {
   content: "";
   display: block;
