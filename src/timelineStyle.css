@@ -1,7 +1,7 @@
 .main-timeline {
   margin: 20px 0;
   position: relative;
-}
+}p
 .main-timeline:before {
   content: "";
   display: block;
@@ -133,7 +133,7 @@
 }
 
 .main-timeline .timeline:hover .date{
-    text-shadow: 1px 1px gray;
+    text-shadow: 5px 5px #EBB;
     
 }
 

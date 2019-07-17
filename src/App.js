@@ -19,7 +19,6 @@ import { Timeline } from "./Timeline";
 import { Footer } from "./Footer";
 import { About } from "./About";
 
-
 import { AutocompleteCity } from "./AutocompleteCity";
 
 export class App extends React.Component {
