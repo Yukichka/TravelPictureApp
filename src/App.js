@@ -7,7 +7,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Row,
   Col
 } from "reactstrap";
 import { NavLink as RRNavLink } from "react-router-dom";
