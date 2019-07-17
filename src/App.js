@@ -17,7 +17,8 @@ import { Image } from "./Image";
 import { Country } from "./Country";
 import { Timeline } from "./Timeline";
 import { Footer } from "./Footer";
-import {About} from "./About";
+import { About } from "./About";
+
 
 import { AutocompleteCity } from "./AutocompleteCity";
 
@@ -72,7 +73,7 @@ export class App extends React.Component {
                 path="/travel/:countryId/:cityId"
                 component={Image}
               />
-              <hr color="#FF1493" />
+              <hr color="#EBB" />
               <Footer />
             </Col>
           </Row>

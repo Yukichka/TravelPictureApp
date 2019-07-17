@@ -115,7 +115,7 @@ export const travel = [
         dates: ["04.03.2015"]
       },
       {
-        name: "Saint-Tropez",
+        name: "SaintTropez",
         location: "/images/sainttropez1.jpg",
         id: "france-sainttropez",
         images: ["/images/sainttropez1.jpg", "/images/sainttropez.jpg"],
@@ -255,7 +255,6 @@ export const travel = [
         id: "italy-milan",
         images: [
           "/images/milan.jpg",
-          "/images/milan1.jpg",
           "/images/milan2.jpg",
           "/images/milan3.jpg"
         ],

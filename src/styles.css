@@ -43,4 +43,7 @@ h3 {
   .image {
     width: 100%;
   }
+  .cardtext{
+    font-size: 40px
+  }
 }

@@ -4,7 +4,7 @@ import { travel } from "./dataset";
 import { Card, CardImg, CardText, CardBody, CardGroup } from "reactstrap";
 
 export function Country({ match }) {
-  console.log(match);
+  // console.log(match);
   const country = travel.find(({ id }) => id === match.params.countryId);
   return (
     <div>

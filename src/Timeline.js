@@ -66,7 +66,6 @@ export class Timeline extends React.Component {
             </div>
           </div>
         </div>
-        <br />
       </div>
     );
   }
