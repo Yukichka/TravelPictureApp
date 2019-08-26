@@ -404,5 +404,6 @@ export const travel = [
   { country: "United States", id: "unitedstates", cities: [], dates: [] },
   { country: "Canada", id: "canada", cities: [], dates: [] },
   { country: "China", id: "china", cities: [], dates: [] },
-  { country: "Hong Kong", id: "hongkong", cities: [], dates: [] }
+  { country: "Hong Kong", id: "hongkong", cities: [], dates: [] },
+  { country: "Russia", id: "russia", cities: [], dates: [] }
 ];
